@@ -4,5 +4,5 @@ This is also published under the "Don't Be A Jerk" license. So Yeah. Dont be a j
 
 This section will be updated with a list of dependencies as we go along...
 ------------------------------------------------------------------------------------
-1. Python (Some version or another, TBD)
+1. Python 2.7
 ------------------------------------------------------------------------------------
