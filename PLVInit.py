@@ -4,7 +4,7 @@ import platform
 
 def Main():
     print("Python Lab Viewer Initialization Program\n")
-    print("CRAB8012\n")
+    print("CRAB8012\nGreen_Cafe")
     OperatingSystem = platform.system()
     print(OperatingSystem)
     #plv.Main(OperatingSystem)
