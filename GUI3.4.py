@@ -33,11 +33,11 @@ class Application(tk.Frame): #Defines the application class that inherits from t
 		#fileMenu:
 		self.fileMenuButton.fileMenu.add_command(command=self.quit, label='Quit')
 		self.fileMenuButton.fileMenu.add_command(command=listImports, label='List File Imports')
-		self.instructionLabel.grid()
 
 		# ADD WIDGETS TO THE WINDOW
 #		self.quitButton.grid() #Places the button on the application {Not required as there is a new menuButton that performs the same function
 #		self.oneCheckbox.grid() #Reference code for a checkbox
+		self.instructionLabel.grid()
 		self.oneEntry.grid()
 		self.writeButton.grid()
 
