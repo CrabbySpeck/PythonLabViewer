@@ -1,6 +1,7 @@
 import commands
 import imports
 import tkinter as tk
+from tkinter import messagebox
 	
 class Application(tk.Frame): #Defines the application class that inherits from the Tkinter Frame class
 	def __init__(self, master=None): #Calls the constructor for the parent class, Frame
@@ -30,7 +31,7 @@ class Application(tk.Frame): #Defines the application class that inherits from t
 		#Add Options to the Menus
 		#fileMenu:
 		self.fileMenuButton.fileMenu.add_command(command=self.quit, label='Quit')
-		self.fileMenuButton.fileMenu.add_command(command=self.aboutDialog, label='About')
+		self.fileMenuButton.fileMenu.add_command(command=self.aboutMe, label='About')
 		
 		#Populate the Window
 		self.populateListButton.grid()
@@ -40,7 +41,9 @@ class Application(tk.Frame): #Defines the application class that inherits from t
 		print(":::::::::::PLV STARTED::::::::::")
 
 	def aboutMe(self):
-		messagebox.showinfo(title='About', message='PythonLabViewer\nBy crab8012 and Green_Cafe')
+		f = open('config.txt', 'r')
+		aboot = str(f.readline())
+		messagebox.showinfo(title='About', message=aboot)
 	def populate(self):
 		f = open('listBox.txt', 'r')
 		i = 1
