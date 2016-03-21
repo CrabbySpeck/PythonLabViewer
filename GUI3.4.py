@@ -2,15 +2,21 @@
 
 import commands #Imports the commands.py file to keep the code cleaner
 import tkinter as tk #Imports the tkinter graphics library as tk
+import platform #Imports the Platform module to show basic system name
 
 class Application(tk.Frame): #Defines the application class that inherits from the Tkinter Frame class
 	def __init__(self, master=None): #Calls the constructor for the parent class, Frame
 		
 		tk.Frame.__init__(self, master) #Actually makes the program appear onscreen.
 
+		self.ShowInfo()
 		self.grid()
 		self.createWidgets()
 
+	def ShowInfo(self):
+			print("Python Lab Viewer Import Modification Program running on:", platform.system(), "\n")
+			print("By:  Crab8012 and Green_Cafe")
+		
 	def createWidgets(self):
 		#DEFINE VARIABLES
 		entryOneVar = tk.StringVar()
@@ -52,6 +58,8 @@ class Application(tk.Frame): #Defines the application class that inherits from t
 		while 0 < len(self.oneEntry.get()):
 			self.oneEntry.delete(0)
 		return()
+		
+		
 def listImports():
 	f = open('imports.py', 'r')
 	reader = []
@@ -75,8 +83,8 @@ def printFile(filename, mode, newcontent):
 	return()
 
 
+
+
 app = Application() #The Main Program Starts Here
-
 app.master.title('PLV Import Utility') #Sets the title of the window
-
 app.mainloop() #Starts the app's main loop, waiting for keyboard and mouse events.
