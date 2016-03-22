@@ -1,6 +1,5 @@
 #!/user/bin/env python
 
-import commands #Imports the commands.py file to keep the code cleaner
 import tkinter as tk #Imports the tkinter graphics library as tk
 import platform #Imports the Platform module to show basic system name
 

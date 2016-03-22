@@ -1,5 +1,3 @@
-import commands
-import imports
 import tkinter as tk
 from tkinter import messagebox
 import time
