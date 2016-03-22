@@ -1,1 +1,16 @@
-PythonLabViewer v0.5.1 'RoseRed' \n By crab8012 and Green_Cafe
+hotpink
+cadetblue
+black
+PythonLabViewer v0.6.0 'Blazerbot Pink' \n By crab8012 and Green_Cafe
+
+
+
+
+
+FORMAT:
+line 1: Active Background
+line 2: Background
+line 3: Foreground
+line 4: The message to bo displayed in the about window
+
+Colors: https://www.tcl.tk/man/tcl8.4/TkCmd/colors.htm

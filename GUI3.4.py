@@ -53,15 +53,15 @@ class Application(tk.Frame): #Defines the application class that inherits from t
 
 	def appendMe(self):
 		content = self.oneEntry.get()
-		content = 'import ' + content + '.py'
-		printFile('imports.py', 'w', content)
+		content = content
+		printFile('listBox.txt', 'w', content)
 		while 0 < len(self.oneEntry.get()):
 			self.oneEntry.delete(0)
 		return()
 		
 		
 def listImports():
-	f = open('imports.py', 'r')
+	f = open('listBox.txt', 'r')
 	reader = []
 	reader = f.readlines()
 	print(reader)
