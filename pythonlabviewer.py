@@ -14,7 +14,7 @@ class Application(tk.Frame): #Defines the application class that inherits from t
 	def createWidgets(self, conf):
 		listBoxContents = tk.StringVar()
 				
-		self.populateListButton = tk.Button(text='Open the ', activebackground=conf[0], bg=conf[1], fg=conf[2], command=self.populate)
+		self.populateListButton = tk.Button(text='List Available Programs', activebackground=conf[0], bg=conf[1], fg=conf[2], command=self.populate)
 		self.listbox = tk.Listbox(listvariable='listBoxContents', activestyle='none',bg=conf[1], highlightcolor='yellow',selectbackground=conf[0], foreground=conf[2])
 		self.getSelectionButton = tk.Button(self, text='Open Selected Lab', activebackground=conf[0], bg=conf[1], fg=conf[2], command=self.actOnSelected)
 		
